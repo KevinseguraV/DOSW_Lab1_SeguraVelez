@@ -1,8 +1,10 @@
+package Laboratorio1.reto1;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
-public class Reto1 {
+public class reto1 {
 
     public static void main(String[] args) {
 
