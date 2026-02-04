@@ -1,5 +1,13 @@
-\# DOSW\_Lab1\_SeguraVelez
+# git maraton 2026-1
 
+## integrantes
+- kevin segura velandia
+- juan pablo velez
 
+----
 
-1. se creo la rama develop
+## retos completados
+
+### Reto: configuracion y creacion de la rama 
+**Evidencia;**
+![captura](Evidencias/pruebaReto1.png)
