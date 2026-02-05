@@ -9,4 +9,13 @@ public class CarreraParalela {
                 .max(Integer::compareTo)
                 .orElse(0);
     }
+    public static int obtenerMenor(List<Integer> numeros) {
+        return numeros.stream()
+                .min(Integer::compareTo)
+                .orElse(0);
+    }
+
+    public static int cantidadDatos(List<Integer> numeros) {
+        return numeros.size();
+    }
 }
