@@ -29,7 +29,7 @@ public class  Resultado {
         this.menor = menor;
     }
 
-    public void setMultiploDe2(int mayor){
-        this.mayor = mayor;
+    public void setMultiploDe2(boolean esMultiploDe2){
+        this.esMultiploDe2 = esMultiploDe2;
     }
 }
