@@ -46,4 +46,15 @@ public class  Resultado {
     public int getCantidad(){
         return cantidad;
     }
+
+    @Override
+    public String toString(){
+        return "Resultados{" +
+                "\n mayor=" + mayor +
+                ", menor=" + menor +
+                ", cantidad=" + cantidad +
+                ", Mult2=" + (esMultiploDe2 ? "es Multiplo de 2" : "No es multiplo de 2" ) +
+                ", div2=" + (esDivisorDe2 ? "es Divisor de 2" : "No es Divisor de 2" ) +
+                ", cantidad par=" + (cantidadPar ? "es par" : "es impar" );
+    }
 }
