@@ -20,6 +20,9 @@ public class CarreraParalela {
     r.setMayor(obtenerMayor(numeros));
     r.setMenor(obtenerMenor(numeros));
     r.setCantidad(cantidadDatos(numeros));
+    r.setMultiploDe2 = r.setmayor % 2 == 0 ? true : false;
+
+
     return r;
    }
 
