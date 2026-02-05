@@ -1,3 +1,5 @@
+package Laboratorio1.reto1;
+
 import java.util.List;
 
 @FunctionalInterface
