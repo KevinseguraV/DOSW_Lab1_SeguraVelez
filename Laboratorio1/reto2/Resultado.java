@@ -19,4 +19,8 @@ public class  Resultado {
     public void setMenor(int menor) {
         this.menor = menor;
     }
+
+    public void setMultiploDe2(int mayor){
+        this.mayor = mayor;
+    }
 }
