@@ -15,6 +15,14 @@ public class CarreraParalela {
                 .orElse(0);
     }
 
+    public static Resultado procesarLista(List<Integer> numeros) {
+    Resultado r = new Resultado();
+    r.setMayor(obtenerMayor(numeros));
+    r.setMenor(obtenerMenor(numeros));
+    r.setCantidad(cantidadDatos(numeros));
+    return r;
+   }
+
     public static int cantidadDatos(List<Integer> numeros) {
         return numeros.size();
     }
