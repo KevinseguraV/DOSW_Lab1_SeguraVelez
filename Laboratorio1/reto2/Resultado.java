@@ -6,6 +6,7 @@ public class  Resultado {
     private int cantidad;
     private boolean esMultiploDe2;
     private boolean esDivisorDe2;
+    private boolean cantidadImpar;
 
     public Resultado() {}
 
@@ -31,5 +32,13 @@ public class  Resultado {
 
     public void setMultiploDe2(boolean esMultiploDe2){
         this.esMultiploDe2 = esMultiploDe2;
+    }
+
+    public void setCantidadImpar(boolean cantidadImpar) {
+        this.cantidadImpar = cantidadImpar;
+    }
+
+    public int getCantidad(){
+        return cantidad;
     }
 }
