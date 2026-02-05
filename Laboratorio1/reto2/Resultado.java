@@ -1,6 +1,6 @@
 package Laboratorio1.reto2;
 
-public class Resultado {
+public class  Resultado {
     private int mayor;
     private int menor;
     private int cantidad;
