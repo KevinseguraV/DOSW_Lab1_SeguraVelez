@@ -21,6 +21,8 @@ public class CarreraParalela {
         r.setMenor(obtenerMenor(numeros));
         r.setCantidad(cantidadDatos(numeros));
         r.setEsDivisorDe2(2 % r.getMayor() == 0 ? true : false);
+        r.setMultiploDe2 ( r.getMayor() % 2 == 0 ? true : false);
+
         return r;
     }
 
