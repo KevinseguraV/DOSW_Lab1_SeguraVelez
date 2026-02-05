@@ -24,6 +24,9 @@ public class CarreraParalela {
         r.setMayor(obtenerMayor(numeros));
         r.setMenor(obtenerMenor(numeros));
         r.setCantidad(cantidadDatos(numeros));
+        r.setEsDivisorDe2(2 % r.mayor == 0 ? true : false);
         return r;
     }
+
+
 }

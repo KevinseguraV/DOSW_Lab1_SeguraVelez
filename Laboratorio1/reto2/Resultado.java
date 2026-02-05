@@ -4,6 +4,7 @@ public class  Resultado {
     private int mayor;
     private int menor;
     private int cantidad;
+    private boolean esDivisorDe2;
 
     public Resultado() {}
 
@@ -17,5 +18,8 @@ public class  Resultado {
 
     public void setMenor(int menor) {
         this.menor = menor;
+    }
+    public void setEsDivisorDe2(boolean esDivisorDe2) {
+        this.esDivisorDe2 = esDivisorDe2;
     }
 }
