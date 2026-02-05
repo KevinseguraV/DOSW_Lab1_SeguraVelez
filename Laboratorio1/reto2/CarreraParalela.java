@@ -23,6 +23,7 @@ public class CarreraParalela {
         r.setEsDivisorDe2(2 % r.getMayor() == 0 ? true : false);
         r.setMultiploDe2(r.getMayor() % 2 == 0 ? true : false);
         r.setCantidadImpar(r.getCantidad() % 2 != 0 ? true : false);
+        r.setCantidadPar(r.getCantidad() % 2 == 0 ? true : false);
         return r;
     }
 
