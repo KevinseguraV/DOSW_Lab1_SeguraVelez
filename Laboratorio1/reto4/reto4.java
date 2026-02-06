@@ -11,5 +11,15 @@ public class reto4 {
         }
         return mapa;
     }
+
+    public static Map<String, Integer> combinarMapas(
+        Map<String, Integer> hashMap,
+        Map<String, Integer> hashTable) {
+
+    Map<String, Integer> resultado = new HashMap<>(hashMap);
+    resultado.putAll(hashTable); // prioriza Hashtable
+    return resultado;
+}
+s
 }
 
