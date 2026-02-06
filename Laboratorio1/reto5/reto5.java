@@ -2,7 +2,7 @@ package Laboratorio1.reto5;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class reto5 {
+public class Reto5 {
 
     public static Set<Integer> cargarDesdeHashSet() {
         Set<Integer> hashSet = new HashSet<>(
