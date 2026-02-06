@@ -40,3 +40,15 @@ Al utilizar el mismo método se generó un conflicto, el cual resolvimos integra
 ![Reto 3](Evidencias/reto3.jpeg)
 
 ---
+
+### 🔵 Reto 4: El tesoro de las llaves duplicadas
+
+**Descripción:**  
+Resolvimos el reto trabajando en paralelo desde ramas separadas. Uno de nosotros implementó el manejo de pares clave-valor utilizando HashMap,
+ignorando claves duplicadas y conservando el primer valor, mientras que el otro utilizó Hashtable para garantizar la sincronización.
+Ambos desarrollamos métodos con el mismo nombre, lo que generó un conflicto que resolvimos unificando la lógica en una sola función que combina ambos mapas,
+prioriza los valores del Hashtable en caso de conflicto, convierte las claves a mayúsculas y las imprime en orden ascendente utilizando Stream,
+Collectors.toMap() y expresiones lambda.
+
+**Evidencia:**  
+![Reto 4](Evidencias/reto4.png)
