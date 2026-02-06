@@ -1,6 +1,7 @@
 package Laboratorio1.reto4;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class reto4 {
 
@@ -25,6 +26,18 @@ public class reto4 {
         mapa.forEach((k, v) ->
                 System.out.println("Clave: " + k.toUpperCase() + " | Valor: " + v)
         );
+    }
+
+    public static Map<String, Integer> ordenarMapa(Map<String, Integer> mapa) {
+        return mapa.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue()) // orden ascendente por valor
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (a, b) -> a,
+                        LinkedHashMap::new
+                ));
     }
 
 }
