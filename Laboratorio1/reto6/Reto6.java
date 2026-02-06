@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Reto6 {
-    //private static Map<String, Runnable> comandos = new HashMap<>();
+    private static Map<String, Runnable> comandos = new HashMap<>();
 
     public static void main(String[] args) {
         ArrayList<String> comandosProbar = new ArrayList<>(Arrays.asList(new String[]{"SALUDAR", "DESPEDIR", "CANTAR", "DANZAR", "BROMEAR", "GRITAR", "SUSURRAR", "ANALIZAR"}));
