@@ -12,4 +12,13 @@ public class Reto4 {
         }
         return tabla;
     }
+
+    public static Map<String, Integer> combinarMapas(
+            Map<String, Integer> mapaHash,
+            Map<String, Integer> mapaTable) {
+
+        Map<String, Integer> resultado = new HashMap<>(mapaHash);
+        resultado.putAll(mapaTable); // prioriza Hashtable
+        return resultado;
+    }
 }
