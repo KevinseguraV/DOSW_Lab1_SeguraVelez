@@ -1,6 +1,7 @@
 package Laboratorio1.reto4;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Reto4 {
     public static void main(String[] args) {
@@ -30,6 +31,18 @@ public class Reto4 {
         Map<String, Integer> resultado = new HashMap<>(hashMap);
         resultado.putAll(hashTable); // prioriza Hashtable
         return resultado;
+    }
+
+    public static Map<String, Integer> ordenarMapa(Map<String, Integer> mapa) {
+        return mapa.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue()) // orden ascendente por valor
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        Map.Entry::getValue,
+                        (a, b) -> a,
+                        LinkedHashMap::new
+                ));
     }
 
 }
