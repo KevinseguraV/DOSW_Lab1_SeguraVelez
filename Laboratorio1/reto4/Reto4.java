@@ -1,11 +1,21 @@
 package Laboratorio1.reto4;
 
+import java.util.*;
+
 public class Reto4 {
     public static void main(String[] args) {
 
     }
 
-    public static Map<String, Integer> cargarMapa(List<Map.Entry<String, Integer>> datos) {
+    public static Map<String, Integer> cargarMapaHash(List<Map.Entry<String, Integer>> datos) {
+        Map<String, Integer> mapa = new HashMap<>();
+        for (Map.Entry<String, Integer> entry : datos) {
+            mapa.putIfAbsent(entry.getKey(), entry.getValue());
+        }
+        return mapa;
+    }
+
+    public static Map<String, Integer> cargarMapaTable(List<Map.Entry<String, Integer>> datos) {
         Map<String, Integer> tabla = new Hashtable<>();
         for (Map.Entry<String, Integer> entry : datos) {
             tabla.putIfAbsent(entry.getKey(), entry.getValue());
@@ -14,11 +24,13 @@ public class Reto4 {
     }
 
     public static Map<String, Integer> combinarMapas(
-            Map<String, Integer> mapaHash,
-            Map<String, Integer> mapaTable) {
+        Map<String, Integer> hashMap,
+        Map<String, Integer> hashTable) {
 
-        Map<String, Integer> resultado = new HashMap<>(mapaHash);
-        resultado.putAll(mapaTable); // prioriza Hashtable
+        Map<String, Integer> resultado = new HashMap<>(hashMap);
+        resultado.putAll(hashTable); // prioriza Hashtable
         return resultado;
     }
+
 }
+
