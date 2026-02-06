@@ -61,3 +61,14 @@ Resolvimos el reto trabajando en paralelo desde ramas separadas. Uno de nosotros
 
 **Evidencia:**  
 ![Reto 5](Evidencias/reto5.jpg)
+
+### 🔵 Reto 6: La máquina de decisiones
+
+**Descripción:**
+Resolvimos el reto trabajando en ramas separadas, donde cada integrante implementó un conjunto de comandos usando switch-case.
+Posteriormente unificamos las implementaciones en una sola estructura utilizando un Map<String,
+Runnable> con expresiones lambda,
+resolviendo los conflictos de merge y garantizando que la máquina respondiera correctamente a todos los comandos definidos.
+
+**Evidencia:**
+![Reto 6](Evidencias/reto6.jpg)
