@@ -3,7 +3,7 @@ package Laboratorio1.reto4;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class reto4 {
+public class Reto4 {
 
     public static Map<String, Integer> cargarMapa(List<Map.Entry<String, Integer>> datos) {
         Map<String, Integer> mapa = new HashMap<>();
