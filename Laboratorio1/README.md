@@ -52,3 +52,12 @@ Collectors.toMap() y expresiones lambda.
 
 **Evidencia:**  
 ![Reto 4](Evidencias/reto4.png)
+
+
+### 🔵 Reto 5: Batalla de Conjuntos
+
+**Descripción:**  
+Resolvimos el reto trabajando en paralelo desde ramas separadas. Uno de nosotros utilizó un HashSet para almacenar números sin orden y eliminar los múltiplos de 3, mientras que el otro utilizó un TreeSet para almacenar los números en orden natural y eliminar los múltplos de 5. Posteriormente unimos ambas colecciones en una sola estructura ordenada, eliminando duplicados, y mostramos el resultado final utilizando stream().filter() y expresiones lambda, resolviendo los conflictos generados durante el proceso de merge.
+
+**Evidencia:**  
+![Reto 5](Evidencias/reto5.jpg)
